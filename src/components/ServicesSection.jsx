@@ -37,12 +37,12 @@ const serviceIcons = {
 
 export default function ServicesSection() {
   return (
-    <section className="rounded-3xl border border-[#2f2f2f] bg-[#1c1c1c] p-8 text-brand-50 shadow-2xl shadow-black/50 ring-1 ring-[#242424]">
+    <section className="rounded-2xl border border-[#2f2f2f] bg-[#1c1c1c] px-5 py-8 text-brand-50 shadow-2xl shadow-black/50 ring-1 ring-[#242424] md:px-8">
       <div className="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
         <div className="space-y-2">
           <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand-300">Services</p>
-          <h2 className="text-3xl leading-tight text-white md:text-4xl">Built for quality installs.</h2>
-          <p className="max-w-2xl text-brand-200">
+          <h2 className="text-2xl leading-tight text-white md:text-4xl">Built for quality installs.</h2>
+          <p className="max-w-2xl text-base leading-relaxed text-brand-200">
             Grade 1 Insulation provides spray foam, fiberglass batts, blown-in, rigid sheathing, and mineral wool
             installs for homeowners, builders, remodelers, and commercial projects.
           </p>
@@ -59,12 +59,12 @@ export default function ServicesSection() {
             className="group relative overflow-hidden rounded-2xl border border-[#3a3a3a] bg-[#252525] p-5 text-brand-50 shadow-xl shadow-black/50 transition hover:-translate-y-1 hover:shadow-2xl hover:shadow-black/70"
           >
             <div className="absolute right-0 top-0 h-24 w-24 rounded-bl-full bg-[#242424] transition group-hover:scale-110" />
-            <div className="relative inline-flex items-center gap-2 rounded-md bg-[#1f1f1f] px-3 py-1 text-sm font-semibold text-white shadow-md shadow-black/40">
+            <div className="relative inline-flex items-center gap-2 rounded-md bg-[#1f1f1f] px-3 py-1.5 text-base font-semibold text-white shadow-md shadow-black/40">
               {serviceIcons[service.title] || <span className="h-3.5 w-3.5 rounded-full bg-white" />}
               {service.title}
             </div>
-            <p className="relative mt-3 text-sm text-brand-100">{service.description}</p>
-            <div className="relative mt-4 space-y-2 text-sm text-brand-100">
+            <p className="relative mt-3 text-base leading-relaxed text-brand-100">{service.description}</p>
+            <div className="relative mt-4 space-y-2 text-base text-brand-100">
               {service.points.map((point) => (
                 <div key={point} className="flex items-center gap-2">
                   <span className="h-1.5 w-1.5 rounded-full bg-brand-300" />

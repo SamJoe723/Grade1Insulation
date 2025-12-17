@@ -6,26 +6,42 @@ export default function ContactSection() {
       id="contact"
       className="grid gap-6 rounded-3xl border border-[#2f2f2f] bg-[#1c1c1c] p-8 text-brand-50 shadow-2xl shadow-black/50 ring-1 ring-[#242424] lg:grid-cols-[1.05fr_0.95fr]"
     >
-      <div className="space-y-4">
-        <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand-300">Book an assessment</p>
-        <h2 className=" text-3xl text-white md:text-4xl">Request a site visit or call.</h2>
+      <div className="space-y-6">
+        <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand-300">Contact Us</p>
+        <h2 className="text-3xl text-white md:text-4xl">Request a site visit or call.</h2>
         <p className="max-w-2xl text-brand-200">
-          Tell us about your project—home, remodel, or commercial. We&apos;ll schedule a visit, confirm scope, and
-          deliver a clear proposal.
+          Tell us about your home, remodel, or commercial project. We&apos;ll get in touch with you to confirm scope, perform site visits if necessary, and
+          deliver a clear proposal. Prefer direct contact? Reach us below.
         </p>
-        <div className="flex flex-wrap gap-3 text-sm text-brand-200">
-          <span className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-2">
-            <span className="h-2 w-2 rounded-full bg-white" />
-            Licensed & insured
-          </span>
-          <span className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-2">
-            <span className="h-2 w-2 rounded-full bg-white" />
-            Clean site protection
-          </span>
-          <span className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-2">
-            <span className="h-2 w-2 rounded-full bg-white" />
-            Photo verification
-          </span>
+        <div className="flex flex-wrap gap-3 text-brand-100">
+          <a
+            href={`tel:${contactInfo.phone.replace(/[^\\d]/g, '')}`}
+            className="inline-flex items-center gap-2 rounded-md border border-white/15 bg-white/5 px-3 py-2 text-sm font-semibold transition hover:border-white/30 hover:bg-white/10"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" className="h-4 w-4">
+              <path
+                d="M5 4h4l2 5-3 2c.8 1.5 2.1 2.8 3.6 3.6l2-3 5 2v4a2 2 0 0 1-2 2c-8.3 0-15-6.7-15-15a2 2 0 0 1 2-2Z"
+                strokeWidth="1.6"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+            {contactInfo.phone}
+          </a>
+          <a
+            href={`mailto:${contactInfo.email}`}
+            className="inline-flex items-center gap-2 rounded-md border border-white/15 bg-white/5 px-3 py-2 text-sm font-semibold transition hover:border-white/30 hover:bg-white/10"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" className="h-4 w-4">
+              <path
+                d="M4 6h16c.6 0 1 .4 1 1v10c0 .6-.4 1-1 1H4c-.6 0-1-.4-1-1V7c0-.6.4-1 1-1Z"
+                strokeWidth="1.6"
+                strokeLinejoin="round"
+              />
+              <path d="m4 7 8 5 8-5" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+            {contactInfo.email}
+          </a>
         </div>
       </div>
 

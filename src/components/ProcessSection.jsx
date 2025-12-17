@@ -2,11 +2,11 @@ import { process } from '../data/content'
 
 export default function ProcessSection() {
   return (
-    <section className="rounded-3xl border border-[#2f2f2f] bg-[#1c1c1c] p-8 text-brand-50 shadow-2xl shadow-black/50 ring-1 ring-[#242424]">
+    <section className="rounded-2xl border border-[#2f2f2f] bg-[#1c1c1c] px-5 py-8 text-brand-50 shadow-2xl shadow-black/50 ring-1 ring-[#242424] md:px-8">
       <div className="space-y-2">
         <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand-300">Process</p>
-        <h2 className="text-3xl text-white md:text-4xl">Clear steps, tight timelines.</h2>
-        <p className="max-w-2xl text-brand-200">
+        <h2 className="text-2xl text-white md:text-4xl">Clear steps, tight timelines.</h2>
+        <p className="max-w-2xl text-base leading-relaxed text-brand-200">
           A premium process for insulation projects of any size—residential, remodel, or commercial.
         </p>
       </div>
@@ -23,7 +23,7 @@ export default function ProcessSection() {
               </span>
               <p className="font-semibold text-white">{step.title}</p>
             </div>
-            <p className="mt-3 text-sm text-brand-200">{step.detail}</p>
+            <p className="mt-3 text-base leading-relaxed text-brand-200">{step.detail}</p>
             <div className="mt-4 h-1 rounded-full bg-gradient-to-r from-brand-400 via-brand-50 to-brand-700" />
           </div>
         ))}

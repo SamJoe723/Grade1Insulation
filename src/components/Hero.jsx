@@ -18,10 +18,17 @@ export default function Hero() {
           </h1>
           <p className="text-lg text-brand-100">
             Spray foam, fiberglass batts, blown-in, rigid sheathing, and mineral wool installs completed with a premium
-            finish, clear communication, and photo verification.
+            finish, clear communication, and customer satisfaction.
           </p>
         </div>
         <div />
+        <Link
+          to="/services"
+          className="inline-flex w-full items-center justify-center gap-2 rounded-md bg-accent-blue px-4 py-2 text-sm font-semibold text-white shadow-md shadow-black/40 transition hover:-translate-y-0.5 hover:shadow-lg md:w-fit"
+        >
+          View all services
+        </Link>
+
         <div className="flex flex-wrap gap-2">
           {badges.map((item) => (
             <span
@@ -58,7 +65,10 @@ export default function Hero() {
               Fast response
             </span>
           </div>
-          <div className="flex items-center gap-2 text-2xl font-semibold text-white">
+          <a
+            href={`tel:${contactInfo.phone.replace(/[^\\d]/g, '')}`}
+            className="flex items-center gap-2 text-2xl font-semibold text-white transition hover:opacity-90"
+          >
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" className="h-5 w-5">
               <path
                 d="M5 4h4l2 5-3 2c.8 1.5 2.1 2.8 3.6 3.6l2-3 5 2v4a2 2 0 0 1-2 2c-8.3 0-15-6.7-15-15a2 2 0 0 1 2-2Z"
@@ -68,8 +78,11 @@ export default function Hero() {
               />
             </svg>
             {contactInfo.phone}
-          </div>
-          <div className="flex items-center gap-2 text-brand-100">
+          </a>
+          <a
+            href={`mailto:${contactInfo.email}`}
+            className="flex items-center gap-2 text-brand-100 transition hover:opacity-90"
+          >
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" className="h-5 w-5">
               <path
                 d="M4 6h16c.6 0 1 .4 1 1v10c0 .6-.4 1-1 1H4c-.6 0-1-.4-1-1V7c0-.6.4-1 1-1Z"
@@ -79,7 +92,7 @@ export default function Hero() {
               <path d="m4 7 8 5 8-5" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
             {contactInfo.email}
-          </div>
+          </a>
           <div className="mt-3 grid gap-2 text-sm">
             <Link
               to="/contact"
@@ -93,16 +106,6 @@ export default function Hero() {
             >
               Email the team
             </a>
-          </div>
-          <div className="mt-3 grid grid-cols-2 gap-2 text-xs text-brand-100">
-            <div className="flex items-center gap-2 rounded-lg border border-[#2f2f2f] bg-[#1f1f1f] px-3 py-2 text-brand-100">
-              <span className="h-2 w-2 rounded-full bg-white" />
-              Fully insured crews
-            </div>
-            <div className="flex items-center gap-2 rounded-lg border border-[#2f2f2f] bg-[#1f1f1f] px-3 py-2 text-brand-100">
-              <span className="h-2 w-2 rounded-full bg-white" />
-              Photo verification
-            </div>
           </div>
         </div>
       </div>
