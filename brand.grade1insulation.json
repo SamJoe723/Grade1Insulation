@@ -1,0 +1,76 @@
+{
+  "brand": {
+    "name": "Grade 1 Insulation, LLC",
+    "industry": "Residential and Commercial Insulation",
+    "personality": [
+      "rugged",
+      "trustworthy",
+      "patriotic",
+      "no-nonsense",
+      "trade-professional",
+      "established"
+    ],
+    "tone": {
+      "voice": "confident",
+      "formality": "professional",
+      "energy": "calm and authoritative"
+    }
+  },
+  "colors": {
+    "primary": {
+      "black": "#1F1F1F",
+      "white": "#F2F2F2"
+    },
+    "secondary": {
+      "gray": "#B5B5B5"
+    },
+    "accent": {
+      "flagRed": "#7A2E2E",
+      "flagBlue": "#2F3E4E"
+    },
+    "usageRules": [
+      "Primary palette should remain monochrome",
+      "Accent colors used sparingly",
+      "Avoid bright or neon colors",
+      "High contrast required for readability"
+    ]
+  },
+  "typography": {
+    "logo": {
+      "primary": {
+        "fontFamily": "Cinzel",
+        "weight": "700",
+        "usage": ["logo", "primary headlines"]
+      },
+      "scriptAccent": {
+        "fontFamily": "Pacifico",
+        "usage": ["logo accent only"]
+      }
+    },
+    "body": {
+      "fontFamily": "Inter",
+      "weights": ["400", "500", "600"],
+      "usage": ["body text", "buttons", "forms"]
+    }
+  },
+  "logo": {
+    "style": "circular badge",
+    "designNotes": [
+      "High contrast only",
+      "No gradients",
+      "Works best on dark backgrounds",
+      "Avoid thin or ultra-modern fonts"
+    ]
+  },
+  "webGuidelines": {
+    "preferredBackgrounds": ["#1F1F1F", "#000000"],
+    "ctaStyle": "solid high-contrast buttons",
+    "layoutStyle": "bold sections, minimal animation",
+    "avoid": [
+      "tech gradients",
+      "pastel colors",
+      "thin typography",
+      "startup or SaaS aesthetic"
+    ]
+  }
+}
