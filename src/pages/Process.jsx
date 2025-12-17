@@ -8,8 +8,8 @@ export default function Process() {
     <>
       <ProcessSection />
       <SectionDivider />
-      <ServicesSection />
-      <SectionDivider />
+      {/* <ServicesSection />
+      <SectionDivider /> */}
       <ContactSection />
     </>
   )

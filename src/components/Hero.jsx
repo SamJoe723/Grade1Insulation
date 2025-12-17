@@ -35,15 +35,25 @@ export default function Hero() {
       </div>
 
       <div className="relative space-y-5 rounded-2xl border border-[#2f2f2f] bg-[#232323]/95 p-6 shadow-xl shadow-black/50 ring-1 ring-[#242424]">
-          <img
-            src={heroImages.badge}
-            alt="Grade 1 Insulation brand badge"
-            // className="mx-auto h-40 w-full max-w-xs object-contain opacity-95"
-          />
+        <div>
+          {[heroImages.truck1].map((src, idx) => (
+            <div key={src} className="relative overflow-hidden rounded-xl border border-white/10 bg-black/30">
+              <img
+                src={src}
+                alt={idx === 0 ? 'Grade 1 Insulation truck at job site' : 'Grade 1 Insulation fleet vehicle'}
+                className="h-40 w-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-brand-900/70 to-transparent" />
+              <p className="absolute bottom-2 left-3 text-xs font-semibold uppercase tracking-[0.16em] text-slate-100">
+                On-site, clean, professional
+              </p>
+            </div>
+          ))}
+        </div>
 
         <div className="relative space-y-3 rounded-xl border border-[#2f2f2f] bg-[#1a1a1a] p-4 text-sm">
           <div className="flex items-center justify-between text-white">
-            <span className="text-xs uppercase tracking-[0.22em] text-brand-200">Direct line</span>
+            <span className="text-xs uppercase tracking-[0.22em] text-brand-200">Contact Us</span>
             <span className="rounded-full bg-[#1f1f1f] px-3 py-1 text-xs font-semibold text-white">
               Fast response
             </span>
@@ -73,13 +83,13 @@ export default function Hero() {
           <div className="mt-3 grid gap-2 text-sm">
             <Link
               to="/contact"
-              className="inline-flex items-center justify-center gap-2 rounded-md bg-white px-4 py-2 font-semibold text-brand-900 shadow-md shadow-black/40 transition hover:-translate-y-0.5 hover:shadow-lg"
+              className="inline-flex items-center justify-center gap-2 rounded-md bg-accent-blue px-4 py-2 font-semibold text-white shadow-md shadow-black/40 transition hover:-translate-y-0.5 hover:shadow-lg"
             >
-              <span>Book a site visit</span>
+              <span>Book a call or site visit</span>
             </Link>
             <a
               href={`mailto:${contactInfo.email}`}
-              className="inline-flex items-center justify-center gap-2 rounded-md border border-[#3a3a3a] px-4 py-2 font-semibold text-white transition hover:-translate-y-0.5 hover:border-[#5a5a5a]"
+              className="inline-flex items-center justify-center gap-2 rounded-md border border-accent-blue/60 px-4 py-2 font-semibold text-white transition hover:-translate-y-0.5 hover:border-accent-blue"
             >
               Email the team
             </a>

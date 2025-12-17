@@ -12,16 +12,16 @@ export default function Home() {
     <>
       <Hero />
       <SectionDivider />
-      <ServicesSection />
-      <SectionDivider />
+      {/* <ServicesSection /> */}
+      {/* <SectionDivider /> */}
       <WhySection />
       <SectionDivider />
       <PortfolioSection />
       <SectionDivider />
-      <ProcessSection />
-      <SectionDivider />
-      <TestimonialsSection />
-      <SectionDivider />
+      {/* <ProcessSection />
+      <SectionDivider /> */}
+      {/* <TestimonialsSection />
+      <SectionDivider /> */}
       <ContactSection />
     </>
   )

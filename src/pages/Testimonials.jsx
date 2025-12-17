@@ -8,8 +8,8 @@ export default function TestimonialsPage() {
     <>
       <TestimonialsSection />
       <SectionDivider />
-      <PortfolioSection />
-      <SectionDivider />
+      {/* <PortfolioSection />
+      <SectionDivider /> */}
       <ContactSection />
     </>
   )

@@ -35,18 +35,11 @@ export default function WhySection() {
             </div>
           ))}
         </div>
-        <div>
-          {[heroImages.truck1].map((src, idx) => (
+        <div className="grid gap-3 md:grid-cols-2">
+          {['/work-samples/work-sample1.jpg', '/work-samples/work-sample2.jpg'].map((src, idx) => (
             <div key={src} className="relative overflow-hidden rounded-xl border border-white/10 bg-black/30">
-              <img
-                src={src}
-                alt={idx === 0 ? 'Grade 1 Insulation truck at job site' : 'Grade 1 Insulation fleet vehicle'}
-                className="h-40 w-full object-cover"
-              />
+              <img src={src} alt={`Grade 1 work sample ${idx + 1}`} className="h-40 w-full object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-brand-900/70 to-transparent" />
-              <p className="absolute bottom-2 left-3 text-xs font-semibold uppercase tracking-[0.16em] text-slate-100">
-                On-site, clean, professional
-              </p>
             </div>
           ))}
         </div>

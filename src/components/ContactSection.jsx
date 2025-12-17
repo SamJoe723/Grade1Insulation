@@ -97,7 +97,7 @@ export default function ContactSection() {
           </div>
           <button
             type="submit"
-            className="flex w-full items-center justify-center gap-2 rounded-full bg-brand-900 px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-brand-900/30 transition hover:-translate-y-0.5 hover:shadow-xl"
+            className="flex w-full items-center justify-center gap-2 rounded-full bg-accent-blue px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-black/30 transition hover:-translate-y-0.5 hover:shadow-xl"
           >
             Send my request
           </button>

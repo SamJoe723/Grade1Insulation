@@ -7,8 +7,8 @@ export default function Services() {
   return (
     <>
       <ServicesSection />
-      <SectionDivider />
-      <ProcessSection />
+      {/* <SectionDivider />
+      <ProcessSection /> */}
       <SectionDivider />
       <ContactSection />
     </>

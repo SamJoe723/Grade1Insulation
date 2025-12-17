@@ -67,21 +67,31 @@ export const portfolio = [
     title: 'Seacoast Custom Home',
     summary: 'Open-cell spray foam + batt hybrid for high R-value and quiet interiors.',
     scope: '4,200 sq ft • New construction • Tight air sealing',
+    image: '/work-samples/work-sample1.jpg',
   },
   {
     title: 'Historic Remodel Retrofit',
     summary: 'Dense-pack cellulose and air sealing with careful finish protection.',
     scope: '3-story • Retrofit • Minimal tear-out',
+    image: '/work-samples/work-sample2.jpg',
   },
   {
     title: 'Multifamily Sound Control',
     summary: 'Mineral wool assemblies for acoustic control and fire resistance.',
     scope: '48 units • Commercial • Acoustic + thermal',
+    image: '/work-samples/work-sample3.jpg',
   },
   {
     title: 'Retail Energy Upgrade',
     summary: 'Rigid sheathing and spray foam envelope improvements for year-round comfort.',
     scope: '12k sq ft • Commercial • Envelope upgrade',
+    image: '/work-samples/work-sample4.jpg',
+  },
+  {
+    title: 'Attic Air Seal + Blown-In',
+    summary: 'Air sealing plus blown-in coverage to balance comfort and energy use.',
+    scope: 'Attic retrofit • Residential',
+    image: '/work-samples/work-sample5.jpg',
   },
 ]
 

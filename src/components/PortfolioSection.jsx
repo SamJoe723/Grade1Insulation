@@ -22,11 +22,22 @@ export default function PortfolioSection() {
             key={item.title}
             className="group overflow-hidden rounded-2xl border border-[#3a3a3a] bg-[#252525] shadow-xl shadow-black/50 transition hover:-translate-y-1 hover:shadow-2xl"
           >
-            <div className="h-32 bg-gradient-to-br from-[#2a2a2a] via-[#202020] to-[#171717]" />
+            <div className="relative h-32 overflow-hidden bg-[#1a1a1a]">
+              {item.image ? (
+                <>
+                  <img src={item.image} alt={item.title} className="h-full w-full object-cover transition duration-300 group-hover:scale-105" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent" />
+                </>
+              ) : (
+                <div className="h-full w-full bg-gradient-to-br from-[#2a2a2a] via-[#202020] to-[#171717]" />
+              )}
+              <p className="absolute bottom-2 left-3 rounded-full bg-black/60 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.16em] text-brand-50">
+                {item.scope}
+              </p>
+            </div>
             <div className="space-y-2 p-4">
               <p className="text-sm font-semibold text-white">{item.title}</p>
               <p className="text-sm text-brand-200">{item.summary}</p>
-              <p className="text-xs text-brand-300">{item.scope}</p>
             </div>
           </div>
         ))}
