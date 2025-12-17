@@ -13,7 +13,7 @@ export default function Hero() {
         </div>
         <div className="space-y-4">
           <p className="text-sm font-semibold text-brand-100">Building-tight energy solutions</p>
-          <h1 className="font-display text-4xl leading-tight text-white md:text-5xl">
+          <h1 className=" text-4xl leading-tight text-white md:text-5xl">
             Insulation for homes, remodels, and commercial projects across New England.
           </h1>
           <p className="text-lg text-brand-100">

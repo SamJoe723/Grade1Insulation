@@ -5,7 +5,7 @@ export default function ProcessSection() {
     <section className="rounded-3xl border border-[#2f2f2f] bg-[#1c1c1c] p-8 text-brand-50 shadow-2xl shadow-black/50 ring-1 ring-[#242424]">
       <div className="space-y-2">
         <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand-300">Process</p>
-        <h2 className="font-display text-3xl text-white md:text-4xl">Clear steps, tight timelines.</h2>
+        <h2 className="text-3xl text-white md:text-4xl">Clear steps, tight timelines.</h2>
         <p className="max-w-2xl text-brand-200">
           A premium process for insulation projects of any size—residential, remodel, or commercial.
         </p>

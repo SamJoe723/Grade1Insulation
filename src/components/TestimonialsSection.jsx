@@ -6,7 +6,7 @@ export default function TestimonialsSection() {
       <div className="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
         <div className="space-y-2">
           <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand-300">Testimonials</p>
-          <h2 className="font-display text-3xl text-white md:text-4xl">Positive results, steady crews.</h2>
+          <h2 className="text-3xl text-white md:text-4xl">Positive results, steady crews.</h2>
           <p className="max-w-2xl text-brand-200">Swap these with real client quotes when you’re ready.</p>
         </div>
       </div>

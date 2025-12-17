@@ -8,7 +8,7 @@ export default function ContactSection() {
     >
       <div className="space-y-4">
         <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand-300">Book an assessment</p>
-        <h2 className="font-display text-3xl text-white md:text-4xl">Request a site visit or call.</h2>
+        <h2 className=" text-3xl text-white md:text-4xl">Request a site visit or call.</h2>
         <p className="max-w-2xl text-brand-200">
           Tell us about your project—home, remodel, or commercial. We&apos;ll schedule a visit, confirm scope, and
           deliver a clear proposal.

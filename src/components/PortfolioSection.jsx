@@ -6,7 +6,7 @@ export default function PortfolioSection() {
       <div className="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
         <div className="space-y-2">
           <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand-300">Recent work</p>
-          <h2 className="font-display text-3xl text-white md:text-4xl">Projects built tight.</h2>
+          <h2 className="text-3xl text-white md:text-4xl">Projects built tight.</h2>
           <p className="max-w-2xl text-brand-200">
             A few examples of the insulation systems we install—ready to swap with your project photos.
           </p>

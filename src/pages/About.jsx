@@ -7,7 +7,7 @@ export default function About() {
     <>
       <section className="rounded-3xl border border-[#2f2f2f] bg-[#1c1c1c] p-8 text-brand-50 shadow-2xl shadow-black/50 ring-1 ring-[#242424]">
         <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand-300">About</p>
-        <h1 className="mt-2 font-display text-3xl text-white md:text-4xl">Grade 1 Insulation</h1>
+        <h1 className="mt-2 text-3xl text-white md:text-4xl">Grade 1 Insulation</h1>
         <p className="mt-3 max-w-3xl text-brand-200">
           Grade 1 Insulation is a no-nonsense, trade-professional team delivering premium insulation systems across New
           England. We handle residential, commercial, and remodel projects with airtight installs, clean job sites, and

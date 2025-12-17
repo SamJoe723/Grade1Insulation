@@ -41,7 +41,7 @@ export default function ServicesSection() {
       <div className="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
         <div className="space-y-2">
           <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand-300">Services</p>
-          <h2 className="font-display text-3xl leading-tight text-white md:text-4xl">Built for quality installs.</h2>
+          <h2 className="text-3xl leading-tight text-white md:text-4xl">Built for quality installs.</h2>
           <p className="max-w-2xl text-brand-200">
             Grade 1 Insulation provides spray foam, fiberglass batts, blown-in, rigid sheathing, and mineral wool
             installs for homeowners, builders, remodelers, and commercial projects.

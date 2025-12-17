@@ -5,7 +5,7 @@ export default function WhySection() {
     <section className="grid gap-6 rounded-3xl border border-[#2f2f2f] bg-[#1c1c1c] p-8 text-brand-50 shadow-2xl shadow-black/50 ring-1 ring-[#242424] lg:grid-cols-[0.9fr_1.1fr]">
       <div className="space-y-3">
         <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand-300">Why Grade 1</p>
-        <h3 className="font-display text-3xl leading-tight text-white">Premium finish, start to seal.</h3>
+        <h3 className="text-3xl leading-tight text-white">Premium finish, start to seal.</h3>
         <p className="text-sm text-brand-200">
           From material selection to cleanup, we manage every step with a premium standard—keeping timelines tight and
           communication clear for homeowners, remodelers, and commercial builders.
