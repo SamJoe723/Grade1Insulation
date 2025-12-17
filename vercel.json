@@ -1,4 +1,3 @@
-// Vercel configuration for Vite + React
 {
   "version": 2,
   "builds": [
