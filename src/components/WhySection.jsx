@@ -43,12 +43,6 @@ export default function WhySection() {
             </div>
           ))}
         </div>
-        <div className="rounded-xl border border-white/15 bg-white/5 p-4 text-sm text-slate-100">
-          <p className="font-semibold text-white">Looking for a partner?</p>
-          <p className="text-slate-200">
-            We coordinate with GCs, remodelers, and homeowners to slot insulation precisely into your build schedule.
-          </p>
-        </div>
       </div>
     </section>
   )

@@ -60,10 +60,10 @@ export default function Hero() {
 
         <div className="relative space-y-3 rounded-xl border border-[#2f2f2f] bg-[#1a1a1a] p-4 text-sm">
           <div className="flex items-center justify-between text-white">
-            <span className="text-xs uppercase tracking-[0.22em] text-brand-200">Contact Us</span>
-            <span className="rounded-full bg-[#1f1f1f] px-3 py-1 text-xs font-semibold text-white">
+            <span className="text-xs uppercase tracking-[0.22em] text-brand-200">Call Now for an Energy-Efficiency Consultation</span>
+            {/* <span className="rounded-full bg-[#1f1f1f] px-3 py-1 text-xs font-semibold text-white">
               Fast response
-            </span>
+            </span> */}
           </div>
           <a
             href={`tel:${contactInfo.phone.replace(/[^\\d]/g, '')}`}
@@ -98,15 +98,15 @@ export default function Hero() {
               to="/contact"
               className="inline-flex items-center justify-center gap-2 rounded-md bg-accent-blue px-4 py-2 font-semibold text-white shadow-md shadow-black/40 transition hover:-translate-y-0.5 hover:shadow-lg"
             >
-              <span>Book a call or site visit</span>
+              <span>Get a Free Estimate</span>
             </Link>
-            <a
-              href={`mailto:${contactInfo.email}`}
-              className="inline-flex items-center justify-center gap-2 rounded-md border border-accent-blue/60 px-4 py-2 font-semibold text-white transition hover:-translate-y-0.5 hover:border-accent-blue"
-            >
-              Email the team
-            </a>
           </div>
+                  <div className="rounded-xl border border-white/15 bg-white/5 p-4 text-sm text-slate-100">
+          <p className="font-semibold text-white">Looking for a partner?</p>
+          <p className="text-slate-200">
+            We coordinate with GCs, remodelers, and homeowners to slot insulation precisely into your build schedule.
+          </p>
+        </div>
         </div>
       </div>
     </section>

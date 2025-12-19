@@ -8,7 +8,7 @@ export default function ContactSection() {
     >
       <div className="space-y-6">
         <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand-300">Contact Us</p>
-        <h2 className="text-3xl text-white md:text-4xl">Request a site visit or call.</h2>
+        <h2 className="text-3xl text-white md:text-4xl">Request a free estimate or consultation</h2>
         <p className="max-w-2xl text-brand-200">
           Tell us about your home, remodel, or commercial project. We&apos;ll get in touch with you to confirm scope, perform site visits if necessary, and
           deliver a clear proposal. Prefer direct contact? Reach us below.

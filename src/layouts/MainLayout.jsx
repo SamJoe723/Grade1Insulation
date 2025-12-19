@@ -137,7 +137,7 @@ export default function MainLayout() {
                   Facebook
                 </a>
                 <Link to="/contact" className="underline underline-offset-4">
-                  Book a call or visit
+                  Get a free estimate
                 </Link>
               </div>
             </div>
