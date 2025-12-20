@@ -93,11 +93,38 @@ export default function ContactSection() {
               >
                 <option>Spray Foam</option>
                 <option>Fiberglass Batts</option>
-                <option>Blown-In / Dense Pack</option>
+                <option>Cellulose / Blown-In</option>
                 <option>Rigid Sheathing</option>
                 <option>Mineral Wool</option>
                 <option>Not sure yet</option>
               </select>
+            </div>
+          </div>
+          <div className="grid gap-4 md:grid-cols-2">
+            <div className="space-y-2">
+              <label className="text-sm font-semibold text-brand-800" htmlFor="projectType">
+                Project type
+              </label>
+              <select
+                id="projectType"
+                className="w-full rounded-xl border border-brand-100 bg-white px-3 py-3 text-sm text-brand-900 outline-none ring-2 ring-transparent transition focus:border-brand-300 focus:ring-brand-100"
+              >
+                <option>Attic</option>
+                <option>Basement</option>
+                <option>Crawlspace</option>
+                <option>Whole home</option>
+              </select>
+            </div>
+            <div className="space-y-2">
+              <label className="text-sm font-semibold text-brand-800" htmlFor="location">
+                Location (town or ZIP)
+              </label>
+              <input
+                id="location"
+                type="text"
+                placeholder="Town or ZIP"
+                className="w-full rounded-xl border border-brand-100 bg-white px-3 py-3 text-sm text-brand-900 outline-none ring-2 ring-transparent transition focus:border-brand-300 focus:ring-brand-100"
+              />
             </div>
           </div>
           <div className="space-y-2">

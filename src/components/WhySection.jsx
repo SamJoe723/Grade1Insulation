@@ -3,7 +3,7 @@ import { serviceAreas, heroImages } from '../data/content'
 export default function WhySection() {
   return (
     <section className="grid gap-6 rounded-2xl border border-[#2f2f2f] bg-[#1c1c1c] px-5 py-8 text-brand-50 shadow-2xl shadow-black/50 ring-1 ring-[#242424] lg:grid-cols-[0.9fr_1.1fr] md:px-8">
-      <div className="space-y-3">
+      <div className="space-y-3 animate-fade-up">
         <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand-300">Why Grade 1</p>
         <h3 className="text-2xl leading-tight text-white md:text-3xl">Premium finish, start to seal.</h3>
         <p className="text-base leading-relaxed text-brand-200">
@@ -26,7 +26,7 @@ export default function WhySection() {
         </div>
       </div>
 
-      <div className="space-y-4 rounded-2xl border border-[#2f2f2f] bg-[#171717] p-6">
+      <div className="space-y-4 rounded-2xl border border-[#2f2f2f] bg-[#171717] p-6 animate-fade-up" style={{ animationDelay: '120ms' }}>
         <div className="grid gap-4 md:grid-cols-3">
           {serviceAreas.slice(0, 3).map((area) => (
             <div key={area} className="rounded-xl border border-[#2f2f2f] bg-[#1f1f1f] p-4 text-base text-brand-100">

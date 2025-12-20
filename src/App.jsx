@@ -7,6 +7,7 @@ import Process from './pages/Process'
 import Testimonials from './pages/Testimonials'
 import About from './pages/About'
 import Contact from './pages/Contact'
+import ServicePage from './pages/service/ServicePage'
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
           <Route path="/testimonials" element={<Testimonials />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/services/:slug" element={<ServicePage />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Route>
       </Routes>

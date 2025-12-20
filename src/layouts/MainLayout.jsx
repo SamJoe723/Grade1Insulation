@@ -18,8 +18,12 @@ export default function MainLayout() {
       <header className="relative border-b border-[#2f2f2f] backdrop-blur">
         <div className="mx-auto flex max-w-6xl flex-col gap-3 px-5 py-4 md:flex-row md:items-center md:justify-between">
           <div className="flex items-center gap-3">
-            <div className="flex h-14 w-14 items-center justify-center overflow-hidden rounded-3xl bg-[#1f1f1f] ring-1 ring-white/10 shadow-lg shadow-black/30">
-              <img src={heroImages.logo} alt="Grade 1 Insulation badge" className="h-full w-full object-cover" />
+            <div className="flex shrink-0 items-center justify-center shadow-lg shadow-black/30">
+              <img
+                src={heroImages.logo}
+                alt="Grade 1 Insulation badge"
+                className="h-14 w-14 md:h-16 md:w-16 object-contain"
+              />
             </div>
             <div>
               <p className="text-base uppercase tracking-[0.32em] text-slate-100">Grade 1 Insulation</p>
@@ -37,12 +41,13 @@ export default function MainLayout() {
                 <path d="M4 7h16M4 12h16M4 17h16" strokeWidth="1.8" strokeLinecap="round" />
               </svg>
             </button>
-            <a
-              href={`tel:${contactInfo.phone.replace(/[^\\d]/g, '')}`}
+            <Link
+              to="/contact"
+              onClick={() => setNavOpen(false)}
               className="inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 text-sm font-semibold text-brand-900 shadow-lg shadow-black/40 transition hover:-translate-y-0.5 hover:shadow-xl"
             >
-              Call {contactInfo.phone}
-            </a>
+              Book a call or free estimate
+            </Link>
           </div>
 
           <nav
@@ -73,12 +78,6 @@ export default function MainLayout() {
                 Contact
               </NavLink>
             </div>
-            <a
-              href={`tel:${contactInfo.phone.replace(/[^\\d]/g, '')}`}
-              className="inline-flex items-center gap-2 rounded-full bg-white px-5 py-3 text-base font-semibold text-brand-900 shadow-lg shadow-black/40 transition hover:-translate-y-0.5 hover:shadow-xl md:hidden"
-            >
-              Call {contactInfo.phone}
-            </a>
           </nav>
         </div>
       </header>

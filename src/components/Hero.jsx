@@ -7,7 +7,7 @@ export default function Hero() {
       <div className="absolute inset-0 bg-[url('/truck2.jpg')] bg-cover bg-center opacity-25" />
       <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-[#0f0f0f]/85 to-[#0f0f0f]/90" />
 
-      <div className="relative space-y-6">
+      <div className="relative space-y-6 animate-fade-up">
         <div className="inline-flex items-center gap-2 rounded-md bg-[#222222] px-3 py-1.5 text-[11px] font-semibold uppercase tracking-[0.18em] text-brand-200 ring-1 ring-[#2f2f2f]">
           Premium • Quality • New England
         </div>
@@ -41,7 +41,10 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="relative space-y-5 rounded-2xl border border-[#2f2f2f] bg-[#232323]/95 p-6 shadow-xl shadow-black/50 ring-1 ring-[#242424]">
+      <div
+        className="relative space-y-5 rounded-2xl border border-[#2f2f2f] bg-[#232323]/95 p-6 shadow-xl shadow-black/50 ring-1 ring-[#242424] animate-fade-up"
+        style={{ animationDelay: '140ms' }}
+      >
         <div>
           {[heroImages.truck1].map((src, idx) => (
             <div key={src} className="relative overflow-hidden rounded-xl border border-white/10 bg-black/30">

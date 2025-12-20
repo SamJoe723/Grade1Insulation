@@ -1,8 +1,17 @@
 import SectionDivider from '../components/SectionDivider'
 import ContactSection from '../components/ContactSection'
-import { serviceAreas } from '../data/content'
+import { serviceAreas, nap } from '../data/content'
+import useSEO from '../hooks/useSEO'
 
 export default function About() {
+  const origin = typeof window !== 'undefined' ? window.location.origin : ''
+  useSEO({
+    title: 'About Grade 1 Insulation | Licensed, insured crews',
+    description:
+      'Trade-professional insulation team serving Southern New Hampshire and New England with licensed and insured crews, clean sites, and documented installs.',
+    url: `${origin}/about`,
+  })
+
   return (
     <>
       <section className="rounded-3xl border border-[#2f2f2f] bg-[#1c1c1c] p-8 text-brand-50 shadow-2xl shadow-black/50 ring-1 ring-[#242424]">
@@ -26,6 +35,14 @@ export default function About() {
             <p className="text-sm font-semibold text-white">Where we serve</p>
             <p className="mt-2 text-sm text-brand-200">{serviceAreas.join(' • ')}</p>
           </div>
+        </div>
+        <div className="mt-6 space-y-2 text-sm text-brand-200">
+          <p className="font-semibold text-white">Trust signals</p>
+          <ul className="space-y-1">
+            <li>Years in business: 5</li>
+            <li>Licensed & insured crews</li>
+            <li>Local focus: {nap.address}</li>
+          </ul>
         </div>
       </section>
 

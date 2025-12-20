@@ -3,7 +3,7 @@ import { portfolio } from '../data/content'
 export default function PortfolioSection() {
   return (
     <section className="rounded-3xl border border-[#2f2f2f] bg-[#1c1c1c] p-8 text-brand-50 shadow-2xl shadow-black/50 ring-1 ring-[#242424]">
-      <div className="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
+      <div className="flex flex-col gap-3 md:flex-row md:items-end md:justify-between animate-fade-up">
         <div className="space-y-2">
           <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand-300">Recent work</p>
           <h2 className="text-3xl text-white md:text-4xl">Projects done right.</h2>
@@ -17,10 +17,11 @@ export default function PortfolioSection() {
       </div>
 
       <div className="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-        {portfolio.map((item) => (
+        {portfolio.map((item, idx) => (
           <div
             key={item.title}
-            className="group overflow-hidden rounded-2xl border border-[#3a3a3a] bg-[#252525] shadow-xl shadow-black/50 transition hover:-translate-y-1 hover:shadow-2xl"
+            className="group overflow-hidden rounded-2xl border border-[#3a3a3a] bg-[#252525] shadow-xl shadow-black/50 transition hover:-translate-y-1 hover:shadow-2xl animate-fade-up"
+            style={{ animationDelay: `${idx * 80}ms` }}
           >
             <div className="relative h-32 overflow-hidden bg-[#1a1a1a]">
               {item.image ? (
